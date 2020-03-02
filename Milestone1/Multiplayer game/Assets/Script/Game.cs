@@ -6,9 +6,10 @@ public class Game : MonoBehaviour
 {
 
     string PlayerOneName;
+    string PlayerTwoName;
 
-
-
+    public int Win1;
+    public int Win2;
 
 
 
@@ -54,6 +55,11 @@ public class Game : MonoBehaviour
         }
     }
 
+    void Reset
+    {
+
+    }
+
   
 
     void SetUp()
@@ -75,47 +81,57 @@ public class Game : MonoBehaviour
         {
             activeGame = false;
             whoWin = 1;
+            Win1++;
 
         }
         if( four == 1 && five == 1 && six == 1)
         { 
             activeGame = false; 
             whoWin = 1;
+            Win1++;
 
         }
         if( seven == 1 && eight == 1 && nine == 1)
         { 
             activeGame = false;
             whoWin = 1;
+            Win1++;
 
         }
         if( one == 1 && four == 1 && seven == 1)
         { 
             activeGame = false;
             whoWin = 1;
+            Win1++;
 
         }
         if( two == 1 && five == 1 && eight == 1)
         {
             whoWin = 1;
             activeGame = false;
+            Win1++;
+
 
         }
         if( three == 1 && six == 1 && nine == 1)
         {
             whoWin = 1;
             activeGame = false;
+            Win1++;
         }
         if( one == 1 && five == 1 && nine == 1)
         {
             whoWin = 1;
             activeGame = false;
+            Win1++;
+
 
         }
         if( seven == 1 && five == 1 && three == 1)
         {
             whoWin = 1;
             activeGame = false;
+            Win1++;
 
         }
  //---------------------------------------------------------------------
@@ -123,48 +139,56 @@ public class Game : MonoBehaviour
         {
             whoWin = 2;
             activeGame = false;
+            Win2++;
 
         }
         if (four == 2 && five == 2 && six == 2)
         {
             whoWin = 2;
             activeGame = false;
+            Win2++;
 
         }
         if (seven == 2 && eight == 2 && nine == 2)
         {
             whoWin = 2;
             activeGame = false;
+            Win2++;
 
         }
         if (one == 2 && four == 2 && seven == 2)
         {
             whoWin = 2;
             activeGame = false;
+            Win2++;
 
         }
         if (two == 2 && five == 2 && eight == 2)
         {
             whoWin = 2;
             activeGame = false;
+            Win2++;
 
         }
         if (three == 2 && six == 2 && nine == 2)
         {
             whoWin = 2;
             activeGame = false;
+            Win2++;
 
         }
         if (one == 2 && five == 2 && nine == 2)
         {
             whoWin = 2;
             activeGame = false;
+            Win2++;
 
         }
         if (seven == 2 && five == 2 && three == 2)
         {
             whoWin = 2;
             activeGame = false;
+            Win2++;
 
         }
     }
